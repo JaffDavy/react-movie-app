@@ -1,0 +1,50 @@
+.band {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* margin-top: 1rem; */
+    gap: 1rem;
+}
+
+.marvellogo {
+    background-image: url(src/assets/title.png);
+    height: 137.4px;
+    width: 357px;
+    top: 231.21px;
+    left: 461px;
+}
+
+#bo {
+    border: 1px ;
+    border-radius: 1rem;
+}
+
+.cati {
+    margin-left: 26rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.but {
+    display: flex;
+    gap: 1rem;
+    margin-left: 27rem;
+}
+
+.whitebut {
+    background-color: aliceblue;
+    color: black;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 10rem;
+    cursor: pointer;
+}
+
+.blackbut {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 10rem;
+    cursor: pointer;
+}

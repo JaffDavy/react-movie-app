@@ -1,0 +1,55 @@
+.movieslide {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.ti {
+    display: flex;
+    justify-content: start;
+}
+
+.movies {
+    display: flex;
+    justify-content: start;
+    justify-content: space-around;
+}
+
+.num {
+    font-size: 13rem;
+    font-weight: 1000;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.num span {
+    position: relative;
+    /* z-index: 2; */
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0rem;
+    right: -3rem;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-left: 4rem;
+}
+
+.image-overlay img {
+    width: 200%;
+    height: 9rem;
+    transition: all 0.3s ease;
+    border-radius: 1rem;
+}
+
+.num:hover .image-overlay img {
+    transform: scale(1.1); /* Slight zoom effect */
+}
