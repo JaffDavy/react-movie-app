@@ -1,0 +1,48 @@
+.latest-trending {
+    padding: 32px 0;
+
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: white;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.movie-item {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.movie-rank {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.2);
+    pointer-events: none;
+}
+
+.movie-poster {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.movie-item:hover .movie-poster {
+    transform: scale(1.05);
+}
+
+.no-movies {
+    color: #999;
+}

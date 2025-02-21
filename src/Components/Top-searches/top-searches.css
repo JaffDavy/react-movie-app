@@ -1,0 +1,34 @@
+.top-searches {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.top-searches-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: aliceblue;
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3rem;
+}
+
+.movie-item {
+    cursor: pointer;
+    position: relative;
+}
+
+.movie-item:hover .movie-poster {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Movie Poster */
+.movie-poster {
+    width: 100%;
+    border-radius: 0.5rem;
+    /* rounded-lg */
+}
