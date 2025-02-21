@@ -82,7 +82,6 @@ export default function HeroBanner({ onMovieSelect }) {
         </div>
       </div>
 
-      {/* Latest & Trending */}
       <div className="trending-section">
         <div className="container">
           <h2 className="trending-title">Latest & Trending</h2>

@@ -33,30 +33,32 @@ export default function LatestTrending({ onMovieSelect }) {
   }, []);
 
   return (
-    <section className="latest-trending">
-      <h2 className="section-title">Latest & Trending</h2>
-      {movies.length > 0 ? (
-        <div className="movie-grid">
-          {movies.map((movie, index) => (
-            <div
-              key={movie.id}
-              className="movie-item"
-              onClick={() => onMovieSelect?.(movie.id)}
-            >
-              <div className="movie-rank">{index + 1}</div>
-              <img
-                src={movie.poster_path ? `${IMAGE_BASE_URL}${movie.poster_path}` : FALLBACK_IMAGE}
-                alt={movie.title}
-                width={300}
-                height={450}
-                className="movie-poster"
-              />
-            </div>
-          ))}
-        </div>
-      ) : (
-        <p className="no-movies">No trending movies available.</p>
-      )}
-    </section>
+    <>
+      {/* <section className="latest-trending">
+        <h2 className="section-title">Latest & Trending</h2>
+        {movies.length > 0 ? (
+          <div className="movie-grid">
+            {movies.map((movie, index) => (
+              <div
+                key={movie.id}
+                className="movie-item"
+                onClick={() => onMovieSelect?.(movie.id)}
+              >
+                <div className="movie-rank">{index + 1}</div>
+                <img
+                  src={movie.poster_path ? `${IMAGE_BASE_URL}${movie.poster_path}` : FALLBACK_IMAGE}
+                  alt={movie.title}
+                  width={300}
+                  height={450}
+                  className="movie-poster"
+                />
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="no-movies">No trending movies available.</p>
+        )}
+      </section> */}
+    </>
   );
 }

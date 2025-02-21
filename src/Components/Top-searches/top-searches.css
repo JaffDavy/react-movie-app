@@ -19,16 +19,16 @@
 .movie-item {
     cursor: pointer;
     position: relative;
+    width: 20rem;
 }
 
 .movie-item:hover .movie-poster {
     transform: scale(1.05);
     transition: transform 0.3s ease;
-}
+}movie-container
 
-/* Movie Poster */
 .movie-poster {
-    width: 100%;
+    width: 100rem;
     border-radius: 0.5rem;
     /* rounded-lg */
 }
